@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>SmartTECH Solutions - RestoManage</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<style>
+
+.swipe-animation {
+    display: none; /* Inicialmente oculto */
+}
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #000; /* Color de la flecha */
+}
+.arrow-container {
+    display: flex;
+    justify-content: center; /* Centrar las flechas horizontalmente */
+    align-items: center; /* Centrar las flechas verticalmente */
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #000; /* Color de la flecha */
+    margin: 0 5px; /* Espacio entre flechas */
+    animation: slideRight 2s infinite alternate; /* Animación de desplazamiento */
+}
+
+
+.arrow-text {
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    color: #000; /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente del texto */
+    animation: slideRightText 2s infinite alternate; /* Animación de desplazamiento para el texto */
+}
+
+@keyframes slideRight {
+    0% {
+        margin-left: 0; /* Posición inicial de la flecha */
+    }
+    100% {
+        margin-left: 50px; /* Posición final de la flecha */
+    }
+}
+
+@keyframes slideRightText {
+    0% {
+        margin-left: 0; /* Posición inicial del texto */
+    }
+    100% {
+        margin-left: 70px; /* Posición final del texto */
+    }
+}
+
+
+</style>
+<body>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__ball"></div>
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER 
+    
+	<div class="top-bar">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="left-top">
+						<div class="email-box">
+							<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> restomanageof@gmail.com
+                            </a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>-->
+    <header class="header header_style_01">
+        <nav class="megamenu navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.svg" alt="image"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#about">Video</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#features">Ventajas</a></li>
+                        <li><a class="active"  href="#pricing">Planes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+	
+    <div id="inicio" class="">
+        <br>
+        <div class="container">
+            <div class="section-title text-center">
+                <h3 class="restomanage-title">RestoManage</h3>
+                <h2>Revoluciona la gestión de tu restaurante. Descubre cómo RestoManage cambiará la forma en que gestionas tu restaurante. Tendrás el control total desde los pedidos hasta el inventario.</h2>
+              
+                <br>
+    
+                 <!-- Center the video -->
+            <div class="row justify-content-center">
+                <div class="">
+                    <div class="video-responsive">
+                        <iframe src="https://www.youtube.com/embed/hLE-j7rQRY4?si=_F_5rEtEAiYZ4Lbp" frameborder="0" allowfullscreen></iframe>
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+    
+                <!-- Center the button -->
+                <div class="row justify-content-center mt-4">
+                    <div class="col-auto">
+                        <br>
+                        <a data-scroll href="#pricing" class="btn btn-light btn-radius btn-brd animacion">¡LO QUIERO AHORA!</a>
+                    </div>
+                </div>
+    
+            </div><!-- end section-title -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+    
+    
+    
+	
+	<div class="parallax section parallax-off" data-stellar-background-ratio="0.9" style="background-image:url('uploads/parallax_05.png');">
+        <div class="container">
+            <div class="row text-center stat-wrap">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1"><i class="flaticon-briefcase"></i></span>
+                    <p class="stat_count">8735</p>
+                    <h3>Pedidos Completados</h3>
+                </div><!-- end col -->
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1"><i class="flaticon-happy"></i></span>
+                    <p class="stat_count">1223</p>
+                    <h3>Clientes Satisfechos</h3>
+                </div><!-- end col -->
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1"><i class="flaticon-idea"></i></span>
+                    <p class="stat_count">3781</p>
+                    <h3>Procesos Mejorados</h3>
+                </div><!-- end col -->
+                
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1"><i class="flaticon-customer-service"></i></span>
+                    <p class="stat_count">4250</p>
+                    <h3>Preguntas Respondidas</h3>
+                </div><!-- end col -->                
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div id="services" class="parallax section lb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>¿Qué te ofrecemos?</h3>
+                <p class="lead">Desliza para descubir los beneficios de RestoManage.</p>
+                <br>
+                <div class="arrow-container">
+                    <div class="arrow-right"></div>
+                    <div class="arrow-right"></div>
+                    <div class="arrow-right"></div>
+                </div>
+                
+                
+
+            </div><!-- end title -->
+
+            <div class="owl-services owl-carousel owl-theme">
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        <a href="uploads/ofrecemos01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="uploads/ofrecemos01.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>Gestión móvil completa.
+                        </h3>
+						<p>Gestiona pedidos, menús y operaciones internas desde cualquier lugar del mundo desde tu teléfono celular.</p>
+					</div>
+                </div>
+                <!-- end service -->
+
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        <a href="uploads/ofrecemos02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="uploads/ofrecemos02.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>Pagos online seguros.
+                        </h3>
+						<p>Ofrece pagos online con tarjeta de crédito y variedad de medios de pago para comodidad de los clientes. </p>
+					</div>
+                </div>
+                <!-- end service -->
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        <a href="uploads/ofrecemos09.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="uploads/ofrecemos09.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>Diseño intuitivo y eficaz.
+                        </h3>
+                        <p>Con un diseño intuitivo y eficaz, tus clientes podrán navegar por tu plataforma con facilidad, aumentando las ventas.</p>
+					</div>
+                </div>
+                <!-- end service -->
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        <a href="uploads/ofrecemos03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="uploads/ofrecemos03.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>No comisiones</h3>
+                        <p>Olvídate de las comisiones y las tarifas adicionales. Mantén el control total sobre tus ganancias sin pagar comisiones a terceros.</p>
+					</div>
+                </div>
+                 <!-- end service -->
+
+                 <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        <a href="uploads/ofrecemos04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="uploads/ofrecemos04.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>Seguimiento por correo</h3>
+                        <p>Mantén a tus clientes informados. Envía actualizaciones automáticas sobre el estado de sus pedidos a su correo electrónico.</p>
+					</div>
+                </div>
+                <!-- end service -->
+
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        <a href="uploads/ofrecemos05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="uploads/ofrecemos05.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>Integración de Mapas</h3>
+                        <p>Con nuestra integración de Mapas, tus usuarios pueden ubicar fácilmente tu negocio e ingresar su ubicación precisa.</p>
+					</div>
+                </div>
+                <!-- end service -->
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        <a href="uploads/ofrecemos06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="uploads/ofrecemos06.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>Personalización de platillos</h3>
+                        <p>Experiencia culinaria personalizada. Añade o elimina ingredientes, ajusta porciones y adapta los platillos según tus preferencias.</p>
+					</div>
+                </div>
+                <!-- end service -->
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        <a href="uploads/ofrecemos07.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="uploads/ofrecemos07.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>Multi-tienda integrada.
+                        </h3>
+                        <p>Expande tu negocio sin complicaciones. Gestiona varias tiendas desde una sola plataforma, maximizando la eficiencia.</p>
+					</div>
+                </div>
+                <!-- end service -->
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        <a href="uploads/ofrecemos08.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="uploads/ofrecemos08.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>Gestión de horarios y costos.
+                        </h3>
+                        <p>Controla los horarios de atención, los costos de envío y los precios de tus productos de manera centralizada y eficaz.</p>
+					</div>
+                </div>
+                <!-- end service -->
+              
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        <a href="uploads/ofrecemos10.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                        <img src="uploads/ofrecemos10.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>Edición visual fácil.
+                        </h3>
+                        <p>Simplifica la gestión de tu contenido, realiza cambios en tu sitio web de forma sencilla, sin necesidad de conocimientos técnicos.</p>
+					</div>
+                </div>
+                <!-- end service -->
+            </div><!-- end row -->
+
+<br>
+
+            <div class="text-center">
+                <a data-scroll href="#pricing" class="btn btn-light btn-radius btn-brd animacion">¡QUIERO RESTOMANAGE!</a>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('uploads/parallax_05.png');">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <div class="customwidget text-left">
+                        <h1>Transforma tu Negocio</h1>
+                        <p>Descubre cómo nuestra plataforma puede llevar tu restaurante al siguiente nivel. Maximiza tus ventas, optimiza tus operaciones y deleita a tus clientes.</p>
+                        <ul class="list-inline">
+                            <li><i class="fa fa-check"></i> Gestión Eficiente</li>
+                            <li><i class="fa fa-check"></i> Experiencia Personalizada</li>
+                            <li><i class="fa fa-check"></i> Diseño Innovador</li>
+                            <li><i class="fa fa-check"></i> Soporte Profesional</li>
+                            <li><i class="fa fa-check"></i> Seguimiento de Pedidos</li>
+                            <li><i class="fa fa-check"></i> Integración de Pagos</li>
+                        </ul><!-- end list -->
+                    </div>
+                </div><!-- end col -->
+                
+                
+				<div class="col-md-6">
+                    <div class="text-center image-center hidden-sm hidden-xs">
+                        <img src="uploads/device_03.png" alt="" class="img-responsive wow fadeInUp">
+                    </div>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+    <div id="features" class="section lb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Ventajas</h3>
+                <p class="lead">Nuestro sistema ofrece beneficios significativos para tu restaurante, desde la gestión eficiente hasta la independencia financiera, estamos aquí para potenciar tu éxito.  <br>¡Descubre cómo podemos transformar tu negocio hoy mismo!</p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="features-left">
+                        <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <i class="flaticon-idea"></i>
+                            <div class="fl-inner">
+                                <h4>Diseño Intuitivo y Atractivo</h4>
+                                <p>Interfaz fácil de usar y visualmente atractiva para una mejor experiencia de usuario.</p>
+                            </div>
+                        </li>
+                        <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <i class="flaticon-money"></i>
+                            <div class="fl-inner">
+                                <h4>Independencia Financiera</h4>
+                                <p>Eliminación de comisiones y dependencias de terceros, mayor control sobre los ingresos.</p>
+                            </div>
+                        </li>
+                        <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+                            <i class="flaticon-price-tag"></i>
+                            <div class="fl-inner">
+                                <h4>Aumento de Ventas</h4>
+                                <p>Funcionalidades que incentivan a los clientes a realizar compras adicionales.</p>
+                            </div>
+                        </li>
+                        <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <i class="flaticon-locked"></i>
+                            <div class="fl-inner">
+                                <h4>Gestión Centralizada</h4>
+                                <p>Centraliza todas las operaciones del restaurante, desde la gestión de pedidos hasta la contabilidad.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="uploads/ipad.png" class="img-center img-responsive" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="features-right">
+                        <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <i class="flaticon-happy"></i>
+                            <div class="fr-inner">
+                                <h4>Experiencia de Marca</h4>
+                                <p>Personalización de la marca, lo que garantiza una presencia consistente y profesional en la web.</p>
+                            </div>
+                        </li>
+                        <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <i class="flaticon-cloud-computing"></i>
+                            <div class="fr-inner">
+                                <h4>Visibilidad Online</h4>
+                                <p>Presencia en línea optimizada para mejorar la visibilidad del restaurante y atraer a nuevos clientes.</p>
+                            </div>
+                        </li>
+                        <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
+                            <i class="flaticon-line-graph"></i>
+                            <div class="fr-inner">
+                                <h4>Eficiencia Operativa</h4>
+                                <p>Automatización de procesos tediosos, como el seguimiento de pedidos y la gestión de inventario.</p>
+                            </div>
+                        </li>
+                        <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <i class="flaticon-support"></i>
+                            <div class="fr-inner">
+                                <h4>Atención al Cliente</h4>
+                                <p>Funciones para una comunicación más rápida y efectiva con los clientes, y gestión de sus datos.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div id="pricing" class="section wb">
+        <div class="container">
+			<div class="section-title text-center">
+                <h3>Planes</h3>
+                <p class="lead">Descubre nuestras opciones de planes diseñados para satisfacer tus necesidades. Desde soluciones básicas hasta paquetes completos, tenemos todo lo que necesitas para impulsar tu negocio. ¡Explora nuestras ofertas y elige el plan que mejor se adapte a ti!</p>
+            </div><!-- end title -->
+			
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricingTable-header">
+                            <h3 class="title">Básico</h3>
+                      
+                        </div>
+                        <div class="price-value">
+                            <div class="value">
+                                <span class="currency">$</span>
+                                <span class="amount">55.<span>00</span></span>
+                                <span class="month">Pago único</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-content">
+                            <li>Archivos de la web completos</li>
+                            <li>Guía de instalación</li>
+                            <li>Entrega inmediata</li>
+                            <li class="disable">Instalación y despliegue</li>
+                            <li class="disable">Integración de Google Maps</li>
+                        </ul>
+                        <a href="https://pay.hotmart.com/Q87163234M" class="pricingTable-signup">Elegir plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable purple">
+                        <div class="pricingTable-header">
+                            <h3 class="title">Premium</h3>
+                            <span class="year">Ahorra <br>$120/año</span>
+                        </div>
+                        <div class="price-value">
+                            <div class="value">
+                                <span class="currency">$</span>
+                                <span class="amount">44.<span>99</span></span>
+                                <span class="month">/mes</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-content">
+                            <li>Instalación y despliegue completos</li>
+                            <li>Soporte contínuo</li>
+                            <li>Integración de Google Maps</li>
+                            <li>Actualizaciones constantes</li>
+                            <li>Dominio + SSL</li>
+                        </ul>
+                      
+                        <a href="https://www.mercadopago.com.pe/subscriptions/checkout?preapproval_plan_id=2c9380848fa6c8e6018fb102f1ed01fb" class="pricingTable-signup">Elegir plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable blue">
+                        <div class="pricingTable-header">
+                            <h3 class="title">Personalizado</h3>
+
+                        </div>
+                        <div class="price-value">
+                            <div class="value">
+                                <span class="currency"></span>
+                                <span class="amount"><span style="font-weight: bold; font-size: 0.8em;">COTIZA</span></span>
+                                <span class="month">TU WEB</span>
+                            </div>
+                            
+                        </div>
+                        <ul class="pricing-content">
+                            <li>Diseño personalizado</li>
+                            <li>Funcionalidades avanzadas</li>
+                            <li>Integraciones específicas</li>
+                            <li>Asesoría personalizada</li>
+                            <li>Cotización detallada</li>
+                        </ul>
+                        <a href="#" class="pricingTable-signup">Cotizar Ahora</a>
+                    </div>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('uploads/parallax_03.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Opiniones de Nuestros Clientes</h3>
+                <p class="lead">¡Agradecemos a todos nuestros increíbles clientes por sus testimonios! ¡Hay cientos de clientes satisfechos! <br>¡Veamos lo que dicen otros sobre RestoManage!</p>
+            </div><!-- end title -->
+            
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Increíblemente útil, lo recomiendo a todos</h3>
+                                <p class="lead">Inicialmente estaba escéptico sobre RestoManage, pero después de usarlo, ¡no puedo dejar de recomendarlo! Ha simplificado enormemente la gestión de mi restaurante y ha mejorado la eficiencia en todas las áreas. ¡Una herramienta imprescindible para cualquier propietario de restaurante!</p>
+                            </div>
+                            
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Más que satisfecho, una inversión que vale la pena</h3>
+                                <p class="lead">Estoy encantado con RestoManage. No solo ha aumentado nuestras ganancias, sino que también ha simplificado enormemente nuestra operativa diaria. La atención al cliente es excepcional y siempre están disponibles para ayudar. ¡Una inversión que ha valido cada centavo!</p>
+                            </div>
+                            
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Impresionante atención al cliente y resultados</h3>
+                                <p class="lead">Desde el primer contacto con RestoManage, su atención al cliente ha sido excepcional. Me ayudaron en cada paso del proceso de implementación y siempre estuvieron dispuestos a resolver cualquier duda. Los resultados hablan por sí mismos: ¡mi restaurante ha experimentado un crecimiento significativo desde que comenzamos a utilizar la plataforma!</p>
+                            </div>
+                            
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Excelente servicio, lo recomiendo</h3>
+                                <p class="lead">Estaba dudando en adquirir la aplicación para mis restaurante, pero sin duda FUE LA MEJOR DECISIÓN, me simplificaron mucho toda la gestión de pedidos, creció mi negocio y me va mucho mejor, sin duda la mejor inversión del mes.</p>
+                            </div>
+                           
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+            
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> 100% Recomendado</h3>
+                                <p class="lead">RestoManage nos ofreció servicios impresionantes. Aumentamos las ganancias, evitando servicios de terceros y nos ayudaron mejorando la marca con su excelente experiencia de usuario.</p>
+                            </div>
+                          
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+            
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Muy Satisfecha</h3>
+                                <p class="lead">Excelente servicio. Tardaron un par de horas en poner nuestra web en funcionamiento, ahora todo es más sencillo puedo manejar mi negocio desde mi celular.</p>
+                            </div>
+                            <!-- <div class="testi-meta">
+                                <img src="uploads/testi_03.png" alt="" class="img-responsive alignleft">
+                                <h4>Luis González <small>- Gerente de Restaurante QRS</small></h4>
+                            </div> -->
+                            
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+            
+
+            <hr class="hr1">
+
+            <div class="row logos">
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <img src="uploads/logo_01.png" alt="" class="img-repsonsive">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <img src="uploads/logo_02.png" alt="" class="img-repsonsive">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <img src="uploads/logo_03.png" alt="" class="img-repsonsive">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <img src="uploads/logo_04.png" alt="" class="img-repsonsive">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <img src="uploads/logo_05.png" alt="" class="img-repsonsive">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <img src="uploads/logo_06.png" alt="" class="img-repsonsive">
+                </div>
+            </div><!-- end row -->
+
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <img src="images/logos/logo-2.svg" alt="" />
+                        </div>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Pages</h3>
+                        </div>
+
+                        <ul class="footer-links hov">
+                            <li><a href="index.html">Inicio<span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="#about">Video<span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="#services">Servicios<span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="#features">Ventajas<span class="icon icon-arrow-right2"></span></a></li>
+							<li><a href="#pricing">Planes<span class="icon icon-arrow-right2"></span></a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-distributed widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contacto</h3>
+							<p>Déjanos tu correo electrónico y nos pondremos en contacto contigo.</p>
+                        </div>
+						
+						<div class="footer-right">
+							<form method="get" action="#">
+								<input placeholder="Ingresa tu correo..." name="search">
+								<i class="fa fa-envelope-o"></i>
+							</form>
+						</div>                        
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">GoodWEB</a> Design By : 
+					<a href="https://html.design/">html design</a></p>
+                </div>
+
+                
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/hoverdir.js"></script>    
+
+</body>
+</html>
